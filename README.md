@@ -38,7 +38,7 @@
 Для запуска приложения необходимо будет выполнить следующее:
 
 1. Склонировать проект на свою локальную машину
-```git clone https://github.com/SergeyRyadchikov/JavaSpringProject.git```
+```git clone https://github.com/TiRastaMafia/JavaSpringProject.git```
 2. В терминале перейти в директорию с проектом ```cd ~/JavaSpringProject```
 3. Перед запуском приложения необзодимо запустить контейнер с базой данных, для этого потребуется выполнить всего 2 команды:
    - ```sudo docker image build -t imagedb .``` - создаст образ с базой данных по инструкции из `Dockerfile`, который наодится в проекте
