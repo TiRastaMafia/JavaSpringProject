@@ -1,0 +1,57 @@
+### Удалить клиента по id
+DELETE http://localhost:8080/v1/clients/10
+Accept: application/json
+
+### Получить клиента по id
+GET http://localhost:8080/v1/clients/8
+Accept: application/json
+
+### Изменить клиента по id
+PUT http://localhost:8080/v1/clients/2
+Content-Type: application/json
+
+{
+  "name": "PetyaNew",
+  "email": "234asdf21@asdNew",
+  "phone": "12sadf432New"
+}
+
+### Получить список всех клиентов
+GET http://localhost:8080/v1/clients
+Accept: application/json
+
+### Создать клиента
+POST http://localhost:8080/v1/new-client
+Content-Type: application/json
+
+{
+  "name": "Nina",
+  "phone": "87777777777",
+  "password": "222"
+
+}
+
+
+### Создать модератора
+POST http://localhost:8080/v1/new-moderator
+Content-Type: application/json
+
+{
+  "name": "Nina",
+  "phone": "89999999999",
+  "password": "111"
+}
+
+### Авторизация
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+"phone": "89999999999",
+"password": "111"
+}
+
+
+### Фильтр клиентов по полу
+GET http://localhost:8080/v1/clients/filter?gender=MALE
+Accept: application/hal+json
